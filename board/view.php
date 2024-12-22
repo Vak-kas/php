@@ -1,5 +1,5 @@
 <?php
-session_start();
+// session_start();
 require('../databases.php');
 include('../base.php'); 
 ?>
@@ -55,6 +55,7 @@ if ($result->num_rows > 0) {
     <div>
     <?php if ($post['author'] == $_SESSION['username']): ?>
         <form action="edit.php" method="get" style="display:inline;">
+            <input type="hidden" name="id" value="<?php echo $post['id']; ?>">
             <button type="submit" class="btn btn-warning">수정하기</button>
         </form>
         <form action="delete.php" method="post" style="display:inline;">
