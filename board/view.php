@@ -30,6 +30,9 @@ if ($result->num_rows > 0) {
             <div class="card-text" style="white-space: pre-line;"><?php echo nl2br($post['content']); ?></div>
             <div class="d-flex justify-content-end">
                 <div class="badge bg-light text-dark p-2">
+                    <div class="mb-2">
+                        <?php echo $post['author']; ?>
+                    </div>
                     <?php echo $post['created_at']; ?>
                 </div>
             </div>
@@ -49,6 +52,18 @@ if ($result->num_rows > 0) {
             <p>첨부파일이 없습니다.</p>
         <?php endif; ?>
     </div>
+    <div>
+    <?php if ($post['author'] == $_SESSION['username']): ?>
+        <form action="edit.php" method="get" style="display:inline;">
+            <button type="submit" class="btn btn-warning">수정하기</button>
+        </form>
+        <form action="delete.php" method="post" style="display:inline;">
+            <input type="hidden" name="id" value="<?php echo $post['id']; ?>">
+            <button type="submit" class="btn btn-danger" onclick="return confirm('정말 삭제하시겠습니까?')">삭제하기</button>
+        </form>
+    <?php endif; ?>
+    </div>
+    <br>
     <div>
         <form action="board.php" method="get">
             <button type="submit" class="btn btn-primary">목록으로 돌아가기</button>
