@@ -13,8 +13,7 @@
         <div class="login">
             <h1>Sign Up</h1>
 
-            <!-- 회원가입 폼 -->
-            <form class="form_container" action="signup_process.php" method="POST">
+            <form class="form_container" action="signup.php" method="POST">
                 <div class="input_container">
                     <!-- 이름 입력 -->
                     <div>
@@ -34,7 +33,7 @@
                         <input
                             type="text"
                             id="id"
-                            name="id"
+                            name="username"
                             class="input_box"
                             required
                         />
@@ -92,7 +91,7 @@
                 </div>
                 <div>
                     <p id="sign">
-                        Already have an account? <a href="/login">Sign in</a>
+                        Already have an account? <a href="/login.html">Sign in</a>
                     </p>
             </div>
             </form>
@@ -117,11 +116,10 @@
 
             if (password !== confirmPassword) {
                 alert("비밀번호가 일치하지 않습니다. 다시 확인해주세요.");
-                return false; // 폼 제출 방지
+                return false; 
             }
 
-            return true; // 폼 제출 진행
-        }
+            return true;
     </script>
 </body>
 </html>
