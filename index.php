@@ -8,19 +8,18 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>홈페이지</title>
-    <link rel="stylesheet" href="login.css">
 </head>
 <body>
     <nav>
         <ul>
-            <li><a href="index.php">메인화면</a></li>
+            <li><a href="/index.php">메인화면</a></li>
             <li><a href="board.php">게시판</a></li>
 
             <?php if (isset($_SESSION['username'])): ?>
                 <li><a href="profile.html">내정보</a></li>
-                <li><a href="logout.php">로그아웃</a></li>
+                <li><a href="/login/logout.php">로그아웃</a></li>
             <?php else: ?>
-                <li><a href="login.html">로그인</a></li>
+                <li><a href="/login/login.html">로그인</a></li>
             <?php endif; ?>
         </ul>
     </nav>

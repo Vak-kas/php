@@ -1,6 +1,6 @@
 <?php
 
-require('databases.php');
+require('../databases.php');
 
 $username = $_POST['username'];
 $password = $_POST['password'];
@@ -19,7 +19,7 @@ if ($result->num_rows > 0) {
         echo "
         <script>
             alert('로그인 성공!');
-            window.location.href = 'index.php';
+            window.location.href = '/index.php';
         </script>
         ";
     }
@@ -27,7 +27,7 @@ if ($result->num_rows > 0) {
         echo "
         <script>
             alert('비밀번호가 일치하지 않습니다. 다시 시도해주세요.');
-            window.location.href = 'login.html';
+            window.location.href = '/login/login.html';
         </script>
         ";
 
