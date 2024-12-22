@@ -1,0 +1,14 @@
+.form-label h5 {
+    font-size: 1.5rem;   /* 글씨 크기 */
+    font-weight: bold;   /* 굵은 글씨 */
+}
+
+.form-control {
+    font-size: 1.2rem;  /* 글씨 크기 */
+    font-weight: normal;  /* 기본 글씨 굵기 */
+}
+
+textarea.form-control {
+    font-size: 1.2rem;  /* 글씨 크기 */
+    font-weight: normal;  /* 기본 글씨 굵기 */
+}
