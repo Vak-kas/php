@@ -9,6 +9,7 @@ include('../base.php');
 ?>
 
 <link rel="stylesheet" type="text/css" href="/static/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="board.css">
 
 <div class="container my-3">
     <table class="table">

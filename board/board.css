@@ -1,0 +1,32 @@
+th, td {
+    text-align: center; /* 텍스트 왼쪽 정렬 */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* 테이블 셀 간격 제거 */
+}
+
+th {
+    background-color: #f4f4f4; /* 제목 셀의 배경색 */
+}
+
+th:nth-child(1), td:nth-child(1) {
+    width: 5%; /* 첫 번째 열(번호) 넓이 설정 */
+}
+
+th:nth-child(2), td:nth-child(2) {
+    width: 35%; /* 두 번째 열(제목) 넓이 설정 */
+}
+
+th:nth-child(3), td:nth-child(3) {
+    width: 30%; /* 세 번째 열(작성자) 넓이 설정 */
+}
+
+th:nth-child(4), td:nth-child(4) {
+    width: 20%; /* 네 번째 열(작성일) 넓이 설정 */
+}
+
+th:nth-child(5), td:nth-child(5) {
+    width: 10%; /* 다섯 번째 열(조회수) 넓이 설정 */
+}
