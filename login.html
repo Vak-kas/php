@@ -10,15 +10,15 @@
 <body>
     <div class="login-main-container">
         <div class="login-info-container">
-            <!-- 로그인 폼 -->
-            <form action="process.php" method="POST">
+
+            <form action="login.php" method="POST">
                 <div class="login-id-input">
                     <label class="un_label" for="user_name">ID</label>
-                    <input type="text" id="user_name" name="user_name" class="UserName" required />
+                    <input type="text" id="user_name" name="username" class="UserName" required />
                 </div>
                 <div class="login-pw-input">
                     <label class="pw_label" for="user_pw">PW</label>
-                    <input type="password" id="user_pw" name="user_pw" class="UserPassword" required />
+                    <input type="password" id="user_pw" name="password" class="UserPassword" required />
                 </div>
                 <div class="btn-container">
                     <button type="submit" class="login-button">LOGIN</button>
