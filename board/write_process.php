@@ -25,7 +25,7 @@ if (isset($_FILES['attachment']) && $_FILES['attachment']['error'] == 0) {
     $upload_dir = '../uploads/board/'; 
     $file_name = basename($_FILES['attachment']['name']);
     $timestamp = time(); 
-    $new_file_name = $file_name . "_" . $timestamp;  
+    $new_file_name = $timestamp . "_" . $filename;  
     $file_path = $upload_dir . $new_file_name;
 
     // 파일을 지정된 디렉토리에 저장
